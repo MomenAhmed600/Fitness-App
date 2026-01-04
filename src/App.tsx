@@ -3,6 +3,7 @@ import Navbar from "@/scenes/navbar";
  import Benefits from "@/scenes/benefits";
 import { useEffect, useState } from "react";
 import { SelectedPage } from "@/shared/types";
+import OurClasses from "./scenes/ourClasses";
 
 
 
@@ -33,6 +34,7 @@ return () => window.removeEventListener("scroll", handleScroll);
         />
         <Home setSelectedPage={setSelectedPage} />
         <Benefits setSelectedPage={setSelectedPage} />
+        <OurClasses setSelectedPage={setSelectedPage} />
       </div>
     </>
   )
