@@ -1,9 +1,10 @@
+import { SelectedPage } from "@/shared/types";
+import { useEffect, useState } from "react";
 import Navbar from "@/scenes/navbar";
  import Home from "@/scenes/home";
  import Benefits from "@/scenes/benefits";
-import { useEffect, useState } from "react";
-import { SelectedPage } from "@/shared/types";
-import OurClasses from "./scenes/ourClasses";
+import OurClasses from "@/scenes/ourClasses";
+import ContactUs from "@/scenes/contactUs"
 
 
 
@@ -35,6 +36,7 @@ return () => window.removeEventListener("scroll", handleScroll);
         <Home setSelectedPage={setSelectedPage} />
         <Benefits setSelectedPage={setSelectedPage} />
         <OurClasses setSelectedPage={setSelectedPage} />
+        <ContactUs setSelectedPage={setSelectedPage} />
       </div>
     </>
   )
